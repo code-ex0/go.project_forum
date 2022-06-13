@@ -1,0 +1,118 @@
+<div class="main_container">
+    <div class="main_card">
+        <div class="decoration">
+            <svg width="120" height="100" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                    <title>Layer 1</title>
+                    <g id="svg_8">
+                        <path stroke="#000000" fill="#000000" id="svg_7" d="m13.99995,16.00022l0,71.06235l94.7498,0l0,-71.06235l-94.7498,0zm26.147,31.30297l-18.25118,22.55045l0,-37.33932l18.25118,14.78887zm-16.34829,-23.40715l75.14844,0l-37.57225,30.45022l-37.57619,-30.45022zm22.47939,28.37757l15.0968,12.23457l15.12049,-12.25431l22.15566,26.91289l-74.13777,0l21.76482,-26.89315zm36.35234,-4.99016l18.22355,-14.76913l0,36.90505l-18.22355,-22.13592z"/>
+                    </g>
+                    <g id="svg_10">
+                        <path fill="#ffffff" id="svg_9" d="m12.62364,14.47027l0,71.06235l94.7498,0l0,-71.06235l-94.7498,0zm26.147,31.30297l-18.25118,22.55045l0,-37.33932l18.25118,14.78887zm-16.34829,-23.40715l75.14844,0l-37.57225,30.45022l-37.57619,-30.45022zm22.47939,28.37757l15.0968,12.23457l15.12049,-12.25431l22.15566,26.91289l-74.13777,0l21.76482,-26.89315zm36.35234,-4.99016l18.22355,-14.76913l0,36.90505l-18.22355,-22.13592z"/>
+                    </g>
+                </g>
+
+            </svg>
+        </div>
+        <div><h1>Please confirm your email</h1></div>
+        <div class="text"><p>Thanks you for your registration and welcome to our forum don't hesitate on giving us a feedback and share any of your concern with us.</p>
+            <p>We hope you enjoy our work and wish you the best on our forum.</p>
+            <p>Click on the link below to confirm your email address.</p>
+        </div>
+        <div class="card_link">
+            <a href="{{.UrlServer}}/confirm-email{{.Token}}">
+                <h3>click here to confirm your email address</h3>
+
+            </a>
+        </div>
+        <a href="{{.UrlServer}}/confirm-email{{.Token}}" class="mirror">{{.UrlServer}}/confirm-email{{.Token}}</a>
+    </div>
+</div>
+<style>
+    @font-face {
+        font-family: mainFont;
+        src: url("fonts/Louis George Cafe.ttf");
+    }
+    @font-face {
+        font-family: mainFontBold;
+        src: url("fonts/Louis George Cafe Bold.ttf");
+    }
+    a{
+        text-align: center;
+        vertical-align: center;
+    }
+
+    .card_link{
+        border-radius: 0.2rem;
+        padding:0.5em;
+        background: #ff6600;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        width: 12rem;
+        text-decoration: none;
+    }
+    .decoration{
+        display: flex;
+        align-items: center;
+        border-radius: 0.5em;
+        justify-content: center;
+        height:15em;
+        width: 100%;
+        background:#7a32ff;
+    }
+
+    svg{
+        background-size: 50px 50px;
+    }
+    body{
+        background-color: rgb(75, 74, 74);
+    }
+    h3{
+        color: #ffffff;
+        text-decoration: none;
+        margin: auto;
+    }
+    h1{
+        color: #000000;
+        display: flex;
+        align-content: center;
+        margin-top: 1em;
+        margin-bottom: 0em;
+        font-family: Arial, serif;
+        text-decoration: underline;
+    }
+    .text{
+        color: #000000;
+        display: flex;
+        padding:1em;
+        flex-direction: column;
+        align-items: center;
+    }
+    a:link{
+        text-decoration: none;
+    }
+
+    .mirror{
+        margin-top: 0.5em;
+        color: #929292
+    }
+
+    .main_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0.5em;
+        background: whitesmoke;
+        max-width: 35rem;
+        box-shadow: black;
+        padding-bottom: 1em;
+        font-family: Arial, serif;
+    }
+    .main_container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
